@@ -418,9 +418,8 @@ function close_fridge ( ) {
 			$(".slide_1").addClass('hidden');
 			$(".slide_2").css({'transition': 'right 1s'});
 			setTimeout(function(){
-				$(".slide_2").addClass('hidden');
-			})
-			setTimeout(function(){
+				$(".slide_2 .element_6").addClass('hidden');
+				$(".slide_2 .element_fridge").addClass('hidden');
 				$(".slide_3").removeClass('hidden').addClass('showZoomIn');
 			}, 300);
 		}, 500);
